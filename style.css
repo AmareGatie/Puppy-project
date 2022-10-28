@@ -1,0 +1,104 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header css */
+.myHeader{
+padding-top: 27px;
+padding-bottom: 27px;
+color: white;
+text-align: center;
+width: 100%;
+ position: fixed;
+}
+ img{
+    width: 100%;
+  
+}
+/* banner css */
+#banner{
+    margin-bottom: 84px;
+    
+}
+h1{
+  text-align: center;
+  font-weight: bold;
+  padding: 2%; 
+}
+/* for both background of footer and header */
+.blueBG{
+    background-color: #063970;
+}
+/* display in colomun three puppy */
+.puppies-section,.puppies-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 4% 6%;
+}
+.missing-puppy{
+    display: none;
+}
+/* more puppies text */ 
+.addational-puppies{
+
+    margin-top: 50px;
+
+}
+.addational-puppies h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+} 
+/* footer css */
+footer{
+    margin-top: 75px;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    }
+    
+@media (min-width: 768px) {
+    /* display puppies in row  */
+   
+    .puppies-section,.puppies-section{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 768px;
+        margin: 0 auto;
+    }
+
+/* give width of puppies */
+.puppy1,
+.missing-puppy,.puppy-2{
+width: 32%;
+}
+.vertical-puppy1,.vertical-puppy2{
+    width: 48%;
+}
+/*display and  give background of missing puppy */ 
+    .missing-puppy{
+        display: block;
+    }
+ 
+.missing-puppy{
+    background-color:#f04d65;
+    
+}
+
+    /* missing  pupies text wrapping */
+.missing-wrapper p{
+    font-size: 60px;
+    text-align: center;
+    transform: translate(2%, 8%);
+    font-weight: bold;
+}
+
+
+
+
+} 
